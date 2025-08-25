@@ -1,4 +1,4 @@
-import { handsHard, zoneGrid } from "./html-selection.js";
+import { handsHard, ruleImg, zoneGrid } from "./html-selection.js";
 
 export const { rock, scissors, paper, spock, lizard } = {
   rock: "rock",

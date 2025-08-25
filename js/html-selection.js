@@ -8,7 +8,8 @@ const statusText = document.getElementById("statusText");
 const modeChanger = document.getElementById("modeChanger");
 const handsHard = document.querySelectorAll(".mode-hard");
 const zoneGrid = document.getElementById("zoneGrid");
-const score = document.getElementById("score");
+const score = document.querySelector(".score");
+const ruleImg = document.querySelector(".ruleimg");
 
 export {
   elHands,
@@ -22,4 +23,5 @@ export {
   handsHard,
   zoneGrid,
   score,
+  ruleImg,
 };
