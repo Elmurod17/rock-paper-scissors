@@ -8,32 +8,42 @@
   </head>
   <body>
     <!-- Choose zone -->
-    <section class="" id="chooseZone">
-      <div class="">
-        <img
-          src="./img/triangle.svg"
-          alt="triangle background"
-          class="absolute inset-0 w-full h-full object-contain rotate-180"
-        />
+    <section class="flex justify-center" id="chooseZone">
+      <div
+        class="grid grid-cols-2 grid-rows-2 w-full max-w-[500px] gap-x-20 gap-y-6"
+        id="zoneGrid"
+      >
         <button class="">
-          <img class="hand" src="./img/paper.svg" alt="paper" />
-        </button>
-        <button class="">
-          <img class="hand" src="./img/scissors.svg" alt="scissors" />
-        </button>
-        <button class="">
-          <img class="hand" src="./img/rock.svg" alt="rock" />
+          <img
+            class="hand w-[200px] h-[200px]"
+            src="./img/paper.svg"
+            alt="paper"
+          />
         </button>
         <button class="">
           <img
-            class="hand mode-hard hidden"
+            class="hand w-[200px] h-[200px]"
+            src="./img/scissors.svg"
+            alt="scissors"
+          />
+        </button>
+        <button class="col-start-1 col-end-3 place items-center">
+          <img
+            class="hand w-[200px] h-[200px]"
+            src="./img/rock.svg"
+            alt="rock"
+          />
+        </button>
+        <button class="">
+          <img
+            class="hand w-[200px] h-[200px] mode-hard hidden"
             src="./img/lizard.svg"
             alt="lizard"
           />
         </button>
         <button class="">
           <img
-            class="hand mode-hard hidden"
+            class="hand w-[200px] h-[200px] mode-hard hidden"
             src="./img/spock.svg"
             alt="spock"
           />
@@ -58,7 +68,7 @@
         <img class="ai" src="./img/oval.svg" alt="oval" />
       </div>
     </section>
-    <button id="modeChanger" class="btn btn-info absolute bottom-10 right-5">
+    <button id="modeChanger" class="btn btn-info absolute bottom-25 right-5">
       Easy mode
     </button>
     <button
