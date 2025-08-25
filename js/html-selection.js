@@ -5,6 +5,7 @@ const chooseZone = document.getElementById("chooseZone");
 const statusZone = document.getElementById("statusZone");
 const playAgain = document.getElementById("playAgain");
 const statusText = document.getElementById("statusText");
+const modeChanger = document.getElementById("modeChanger");
 
 export {
   hands,
@@ -14,4 +15,5 @@ export {
   playAgain,
   AI,
   statusText,
+  modeChanger,
 };

@@ -6,3 +6,8 @@ export const { rock, scissors, paper, spock, lizard } = {
   lizard: "lizard",
 };
 export const hands = [rock, scissors, paper, spock, lizard];
+
+export let mode = "easy";
+export function mChanger(value) {
+  mode = value;
+}

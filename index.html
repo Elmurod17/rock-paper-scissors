@@ -8,30 +8,27 @@
   </head>
   <body>
     <!-- Choose zone -->
-    <section
-      class="flex justify-center items-center min-h-screen"
-      id="chooseZone"
-    >
-      <div class="relative w-[380px] h-[380px]">
+    <section class="" id="chooseZone">
+      <div class="">
         <img
           src="./img/triangle.svg"
           alt="triangle background"
           class="absolute inset-0 w-full h-full object-contain rotate-180"
         />
-        <button
-          class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/8"
-        >
-          <img class="hand w-50 h-50" src="./img/paper.svg" alt="paper" />
+        <button class="">
+          <img class="hand" src="./img/paper.svg" alt="paper" />
         </button>
-        <button
-          class="absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/4"
-        >
-          <img class="hand w-50 h-50" src="./img/scissors.svg" alt="scissors" />
+        <button class="">
+          <img class="hand" src="./img/scissors.svg" alt="scissors" />
         </button>
-        <button
-          class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4"
-        >
-          <img class="hand w-50 h-50" src="./img/rock.svg" alt="rock" />
+        <button class="">
+          <img class="hand" src="./img/rock.svg" alt="rock" />
+        </button>
+        <button class="">
+          <img class="hand mode-hard" src="./img/lizard.svg" alt="lizard" />
+        </button>
+        <button class="">
+          <img class="hand mode-hard" src="./img/spock.svg" alt="spock" />
         </button>
       </div>
     </section>
@@ -53,6 +50,9 @@
         <img class="ai" src="./img/oval.svg" alt="oval" />
       </div>
     </section>
+    <button id="modeChanger" class="btn btn-info absolute bottom-10 right-5">
+      Easy mode
+    </button>
     <button
       popovertarget="modal"
       class="fixed bottom-10 right-4 border border-white text-white px-6 py-2 rounded-lg tracking-widest"
