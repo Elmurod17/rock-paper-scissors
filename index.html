@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Easy</title>
+  </head>
+  <body>
+    <!-- Choose zone -->
+    <section
+      class="flex justify-center items-center min-h-screen"
+      id="chooseZone"
+    >
+      <div class="relative w-[380px] h-[380px]">
+        <img
+          src="./img/triangle.svg"
+          alt="triangle background"
+          class="absolute inset-0 w-full h-full object-contain rotate-180"
+        />
+        <button
+          class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/8"
+        >
+          <img class="hand w-50 h-50" src="./img/paper.svg" alt="paper" />
+        </button>
+        <button
+          class="absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/4"
+        >
+          <img class="hand w-50 h-50" src="./img/scissors.svg" alt="scissors" />
+        </button>
+        <button
+          class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4"
+        >
+          <img class="hand w-50 h-50" src="./img/rock.svg" alt="rock" />
+        </button>
+      </div>
+    </section>
+    <!-- Status zone -->
+    <section class="hidden" id="statusZone">
+      <div class="flex justify-center place items-center">
+        <!-- Player -->
+        <img id="player" src="" alt="" />
+        <!-- Play again button -->
+        <button id="playAgain" class="btn btn-accent">Play again</button>
+        <div
+          role="alert"
+          class="alert alert-info alert-dash w-fit h-fit px-3 py-1 text-sm"
+        >
+          <span id="statusText">Loading...</span>
+        </div>
+
+        <!-- AI -->
+        <img class="ai" src="./img/oval.svg" alt="oval" />
+      </div>
+    </section>
+    <button
+      popovertarget="modal"
+      class="fixed bottom-10 right-4 border border-white text-white px-6 py-2 rounded-lg tracking-widest"
+    >
+      RULES
+    </button>
+    <div id="modal" popover="auto" class="p-4 bg-white rounded-lg shadow-lg">
+      <img class="mb-4" src="./img/easy-rules.png" alt="Easy Rules" />
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
