@@ -6,6 +6,7 @@ const statusZone = document.getElementById("statusZone");
 const playAgain = document.getElementById("playAgain");
 const statusText = document.getElementById("statusText");
 const modeChanger = document.getElementById("modeChanger");
+const handsHard = document.querySelectorAll(".mode-hard");
 
 export {
   hands,
@@ -16,4 +17,5 @@ export {
   AI,
   statusText,
   modeChanger,
+  handsHard,
 };
