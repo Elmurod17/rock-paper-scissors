@@ -1,4 +1,4 @@
-const hands = document.querySelectorAll(".hand");
+const elHands = document.querySelectorAll(".hand");
 const player = document.querySelector("#player");
 const AI = document.querySelector(".ai");
 const chooseZone = document.getElementById("chooseZone");
@@ -8,9 +8,10 @@ const statusText = document.getElementById("statusText");
 const modeChanger = document.getElementById("modeChanger");
 const handsHard = document.querySelectorAll(".mode-hard");
 const zoneGrid = document.getElementById("zoneGrid");
+const score = document.getElementById("score");
 
 export {
-  hands,
+  elHands,
   player,
   chooseZone,
   statusZone,
@@ -20,4 +21,5 @@ export {
   modeChanger,
   handsHard,
   zoneGrid,
+  score,
 };

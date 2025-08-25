@@ -6,6 +6,37 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>Easy</title>
   </head>
+
+  <header
+    class="mx-auto w-full max-w-[740px] px-3 py-10 max-[600px]:max-w-full max-[600px]:p-6"
+  >
+    <div
+      class="flex items-center justify-between rounded-[12px] border-[3px] border-grey px-4 py-[14px] max-[600px]:rounded-[3px] max-[600px]:p-4"
+    >
+      <img
+        class="h-[89px] w-[152px] object-contain max-[600px]:h-10 max-[600px]:w-[79px]"
+        src="img/ROCK PAPER SCISSORS.svg"
+        alt="Site logo"
+        width="152"
+        height="89"
+      />
+
+      <span
+        class="flex w-[126px] flex-col items-center rounded-[6px] bg-box p-3 shadow-drop max-[600px]:w-16 max-[600px]:rounded max-[600px]:p-[8px]"
+      >
+        <span
+          class="font-semibold uppercase tracking-[2.5px] text-blue max-[600px]:text-[10px]"
+          >Score</span
+        >
+        <span
+          class="text-[64px] font-bold leading-none text-dark-blue max-[600px]:text-[40px]"
+          id="score"
+          >0</span
+        >
+      </span>
+    </div>
+  </header>
+
   <body>
     <!-- Choose zone -->
     <section class="flex justify-center" id="chooseZone">
@@ -13,21 +44,27 @@
         class="grid grid-cols-2 grid-rows-2 w-full max-w-[500px] gap-x-20 gap-y-6"
         id="zoneGrid"
       >
-        <button class="">
+        <button
+          class="hand h-[173px] w-[168px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"
+        >
           <img
             class="hand w-[200px] h-[200px]"
             src="./img/paper.svg"
             alt="paper"
           />
         </button>
-        <button class="">
+        <button
+          class="hand h-[173px] w-[168px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"
+        >
           <img
             class="hand w-[200px] h-[200px]"
             src="./img/scissors.svg"
             alt="scissors"
           />
         </button>
-        <button class="col-start-1 col-end-3 place items-center">
+        <button
+          class="hand col-start-1 col-end-3 h-[173px] w-[168px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"
+        >
           <img
             class="hand w-[200px] h-[200px]"
             src="./img/rock.svg"
@@ -56,12 +93,14 @@
         <!-- Player -->
         <img id="player" src="" alt="" />
         <!-- Play again button -->
-        <button id="playAgain" class="btn btn-accent">Play again</button>
-        <div
-          role="alert"
-          class="alert alert-info alert-dash w-fit h-fit px-3 py-1 text-sm"
-        >
-          <span id="statusText">Loading...</span>
+        <div class="flex-col-reverse">
+          <button id="playAgain" class="btn btn-accent">Play again</button>
+          <div
+            role="alert"
+            class="alert alert-info alert-dash w-fit h-fit px-3 py-1 text-sm"
+          >
+            <span id="statusText">Loading...</span>
+          </div>
         </div>
 
         <!-- AI -->

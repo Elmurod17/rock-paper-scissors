@@ -15,16 +15,9 @@ export function mChanger(value) {
   handsHard.forEach((hand) => {
     if (value === "hard") {
       hand.classList.remove("hidden");
-      zoneGrid.classList.remove("grid-cols-2", "grid-rows-2");
-      zoneGrid.classList.add("grid-cols-2", "grid-rows-3", "gap-10");
+      zoneGrid.classList.add("grid-cols-2", "grid-rows-3");
     } else {
-      zoneGrid.classList.remove("grid-cols-2", "grid-rows-3", "gap-10");
-      zoneGrid.classList.add(
-        "grid-cols-2",
-        "grid-rows-2",
-        "gap-x-20",
-        "gap-y-6"
-      );
+      zoneGrid.classList.remove("grid-cols-2", "grid-rows-3");
       hand.classList.add("hidden");
     }
   });

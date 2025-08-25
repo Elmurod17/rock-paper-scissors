@@ -1,7 +1,7 @@
 import { aiChoose } from "./ai-choose.js";
 import {
   AI,
-  hands,
+  elHands,
   modeChanger,
   playAgain,
   player,
@@ -11,7 +11,7 @@ import { switchZone } from "./switch-zone.js";
 import { checkWinner } from "./check-winner.js";
 import { mChanger, mode } from "./constants.js";
 // hands
-hands.forEach((el) => {
+elHands.forEach((el) => {
   el.addEventListener("click", (e) => {
     const rpsPlayer = e.target.alt;
     const playerSrc = e.target.src;
