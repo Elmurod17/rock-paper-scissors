@@ -10,6 +10,7 @@ import {
 import { switchZone } from "./switch-zone.js";
 import { checkWinner } from "./check-winner.js";
 import { mChanger, mode } from "./constants.js";
+import { updateScore } from "./score.js";
 // hands
 elHands.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -19,9 +20,10 @@ elHands.forEach((el) => {
     switchZone(true);
     setTimeout(() => {
       const ai = aiChoose();
-      const winnner = checkWinner(ai, rpsPlayer);
+      const winner = checkWinner(ai, rpsPlayer);
       AI.src = `img/${ai}.svg`;
-      statusText.textContent = winnner;
+      statusText.textContent = winner;
+      updateScore(winner);
     }, 1000);
   });
 });

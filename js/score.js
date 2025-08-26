@@ -1,14 +1,20 @@
-import { checkWinner } from "./check-winner.js";
 import { score } from "./html-selection.js";
 
-const winner = checkWinner();
+let currentScore = 0;
 
-if (winner === "player") {
-  score.textContent = Number(score.textContent) + 1;
-} else if (winner === "computer") {
-  const current = Number(score.textContent);
-  if (current > 0) {
-    score.textContent = current - 1;
+export function updateScore(winner) {
+  if (winner === "player") {
+    currentScore++;
+    score.textContent = currentScore;
+  } else if (winner === "ai") {
+    if (currentScore > 0) {
+      currentScore--;
+      score.textContent = currentScore;
+    }
   }
 }
-        
+
+export function resetScore() {
+  currentScore = 0;
+  score.textContent = currentScore;
+}
