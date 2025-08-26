@@ -23,5 +23,5 @@ export {
   handsHard,
   zoneGrid,
   score,
-  ruleImg,
+  ruleImg,  
 };

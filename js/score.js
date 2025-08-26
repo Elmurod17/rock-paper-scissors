@@ -11,3 +11,4 @@ if (winner === "player") {
     score.textContent = current - 1;
   }
 }
+        

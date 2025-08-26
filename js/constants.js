@@ -1,4 +1,4 @@
-import { handsHard, ruleImg, zoneGrid } from "./html-selection.js";
+import { handsHard, zoneGrid } from "./html-selection.js";
 
 export const { rock, scissors, paper, spock, lizard } = {
   rock: "rock",
@@ -10,6 +10,7 @@ export const { rock, scissors, paper, spock, lizard } = {
 export const hands = [rock, scissors, paper, spock, lizard];
 
 export let mode = "easy";
+
 export function mChanger(value) {
   mode = value;
   handsHard.forEach((hand) => {
