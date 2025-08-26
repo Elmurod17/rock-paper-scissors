@@ -1579,8 +1579,17 @@
   .h-\[89px\] {
     height: 89px;
   }
+  .h-\[96px\] {
+    height: 96px;
+  }
+  .h-\[108px\] {
+    height: 108px;
+  }
   .h-\[120px\] {
     height: 120px;
+  }
+  .h-\[159px\] {
+    height: 159px;
   }
   .h-\[173px\] {
     height: 173px;
@@ -1612,6 +1621,12 @@
   .w-\[2px\] {
     width: 2px;
   }
+  .w-\[108px\] {
+    width: 108px;
+  }
+  .w-\[109px\] {
+    width: 109px;
+  }
   .w-\[120px\] {
     width: 120px;
   }
@@ -1620,6 +1635,9 @@
   }
   .w-\[152px\] {
     width: 152px;
+  }
+  .w-\[159px\] {
+    width: 159px;
   }
   .w-\[168px\] {
     width: 168px;

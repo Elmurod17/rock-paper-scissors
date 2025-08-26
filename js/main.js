@@ -2,9 +2,11 @@ import { aiChoose } from "./ai-choose.js";
 import {
   AI,
   elHands,
+  headerImg,
   modeChanger,
   playAgain,
   player,
+  ruleImg,
   statusText,
 } from "./html-selection.js";
 import { switchZone } from "./switch-zone.js";
@@ -38,9 +40,21 @@ playAgain.addEventListener("click", () => {
 modeChanger.addEventListener("click", () => {
   if (mode === "easy") {
     modeChanger.textContent = "Hard mode";
+    ruleImg.src = "./img/hard-rules.png";
+    headerImg.src = "./img/hard-header.svg"
+    headerImg.classList.toggle("w-[159px]");
+    headerImg.classList.toggle("h-[96px]");
+    headerImg.classList.toggle("w-[109px]");
+    headerImg.classList.toggle("h-[108px]");
     mChanger("hard");
   } else {
     mChanger("easy");
     modeChanger.textContent = "Easy mode";
+    ruleImg.src = "./img/easy-rules.png";
+    headerImg.src = "./img/easy-header.svg";
+    headerImg.classList.toggle("w-[109px]");
+    headerImg.classList.toggle("h-[108px]");
+    headerImg.classList.toggle("w-[159px]");
+    headerImg.classList.toggle("h-[96px]");
   }
 });
